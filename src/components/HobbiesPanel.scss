@@ -1,0 +1,32 @@
+.hobbies-panel {
+    background-color: $panel-background;
+    backdrop-filter: blur(10px);
+    border: 1px solid $border-color;
+    padding: 2rem;
+    margin: 4rem 2rem;
+    box-shadow: $glow-primary, $shadow-blue-blur;
+    clip-path: polygon(0 30px, 30px 0, 100% 0, 100% 100%, 0 100%);
+    transition: transform $transition-speed, box-shadow $transition-speed;
+    animation: fadeIn 0.8s 0.4s ease-out forwards;
+    opacity: 0;
+
+    &:hover {
+        transform: translateY(-10px) perspective(1000px);
+        box-shadow: $glow-primary, $glow-accent;
+    }
+
+    h2 {
+        color: $primary-color; // Ciano para destaque
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .hobby-item {
+        margin-bottom: 1.5rem;
+    }
+}

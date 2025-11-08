@@ -1,0 +1,29 @@
+{
+  "name": "tron-portfolio",
+  "version": "1.0.0",
+  "description": "A modern and futuristic portfolio inspired by TRON.",
+  "main": "src/main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.32.0",
+    "vite": "^7.2.2"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "tron",
+    "futuristic",
+    "neon"
+  ],
+  "author": "Lucas Lemuel Silva Araújo",
+  "license": "MIT"
+}

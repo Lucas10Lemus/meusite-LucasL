@@ -1,0 +1,17 @@
+// Fontes
+$font-titles: 'Orbitron', sans-serif;
+$font-body: 'Roboto', sans-serif;
+
+// Cores
+$background-color: #0A0A0A; // Fundo preto profundo
+$primary-color: #00FFFF; // Azul neon (Ciano)
+$accent-color: #0077FF; // Azul metálico
+$text-color: #E0E0E0; // Cinza-claro
+
+// Efeitos
+$panel-background: rgba(20, 30, 40, 0.6);
+$border-color: rgba($primary-color, 0.3);
+$glow-primary: 0 0 10px $primary-color, 0 0 20px rgba($primary-color, 0.7); // Brilho ciano suave
+$glow-accent: 0 0 10px $accent-color, 0 0 20px rgba($accent-color, 0.7); // Brilho azul metálico
+$shadow-blue-blur: 0 5px 15px rgba($accent-color, 0.4); // Sombra azul difusa
+$transition-speed: 0.3s;
