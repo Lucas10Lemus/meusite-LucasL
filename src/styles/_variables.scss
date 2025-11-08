@@ -2,16 +2,20 @@
 $font-titles: 'Orbitron', sans-serif;
 $font-body: 'Roboto', sans-serif;
 
-// Cores
-$background-color: #0A0A0A; // Fundo preto profundo
-$primary-color: #00FFFF; // Azul neon (Ciano)
-$accent-color: #0077FF; // Azul metálico
-$text-color: #E0E0E0; // Cinza-claro
+// Paleta de Cores
+$background-color: #0a0a1a;
+$panel-background: rgba(10, 25, 47, 0.8);
+$text-color: #e6f1ff;
 
-// Efeitos
-$panel-background: rgba(20, 30, 40, 0.6);
+// Cores de Destaque
+$primary-color: #00ffff; // Ciano
+$accent-color: #3d5afe; // Azul Metálico
+
+// Bordas e Sombras
 $border-color: rgba($primary-color, 0.3);
-$glow-primary: 0 0 10px $primary-color, 0 0 20px rgba($primary-color, 0.7); // Brilho ciano suave
-$glow-accent: 0 0 10px $accent-color, 0 0 20px rgba($accent-color, 0.7); // Brilho azul metálico
-$shadow-blue-blur: 0 5px 15px rgba($accent-color, 0.4); // Sombra azul difusa
+$glow-primary: 0 0 15px rgba($primary-color, 0.7);
+$glow-accent: 0 0 15px rgba($accent-color, 0.7);
+$shadow-blue-blur: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+// Transições
 $transition-speed: 0.3s;

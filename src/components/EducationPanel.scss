@@ -1,0 +1,57 @@
+.education-panel {
+    background-color: $panel-background;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba($border-color, 0.5);
+    padding: 2rem;
+    margin: 4rem 2rem;
+    box-shadow: $glow-accent, $shadow-blue-blur;
+    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px));
+    animation: fadeIn 0.8s 0.6s ease-out forwards;
+    opacity: 0;
+
+    h2 {
+        color: $accent-color;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .education-item {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-left: 4px solid transparent;
+        transition: border-color $transition-speed, background-color $transition-speed;
+
+        &:hover {
+            border-left-color: $accent-color;
+            background-color: rgba($accent-color, 0.05);
+        }
+    }
+
+    .education-icon {
+        font-size: 2.5rem;
+        color: $accent-color;
+    }
+
+    .education-details {
+        h3 {
+            margin: 0 0 0.25rem;
+            color: $text-color;
+        }
+
+        .institution {
+            margin: 0;
+            font-weight: bold;
+            color: darken($text-color, 15%);
+        }
+
+        .period {
+            margin: 0;
+            font-style: italic;
+            color: $primary-color;
+        }
+    }
+}

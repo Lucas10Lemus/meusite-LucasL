@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePicture from '@/assets/fotoperfilsite.jpeg';
 import './Hero.scss';
 
 const Hero = () => {
@@ -6,13 +7,12 @@ const Hero = () => {
         <section id="hero" className="hero-container">
             <div className="profile-card">
                 <div className="profile-picture-container">
-                    {/* A imagem deve estar em public/foto-perfil.jpeg */}
-                    <img src="/foto-perfil.jpeg" alt="Foto de Lucas L" className="profile-picture" />
+                    <img src={profilePicture} alt="Foto de Lucas L" className="profile-picture" />
                 </div>
                 <h1 className="hero-title">Lucas Lemu</h1>
                 <p className="hero-subtitle">Desenvolvedor & Criador de Experiências Futuristas</p>
                 <p className="hero-description">
-                    Sou Lucas L, entusiata por tecnologia, design e interfaces digitais modernas. Busco unir performance e estética para criar experiências marcantes.
+                    Sou Lucas Lemuel, entusiata por tecnologia, design e interfaces digitais modernas. Busco unir performance e estética para criar experiências marcantes.
                 </p>
                 <div className="hero-buttons">
                     <a href="#projects" className="hero-button-link">
