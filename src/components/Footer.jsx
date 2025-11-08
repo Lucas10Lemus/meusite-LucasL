@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer id="contact" className="footer">
-            <h2 className="footer-title">Conecte-se Comigo</h2>
+            <h2 className="footer-title animated-text-glow">Conecte-se Comigo</h2>
             <div className="social-icons">
                 <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <FaGithub />

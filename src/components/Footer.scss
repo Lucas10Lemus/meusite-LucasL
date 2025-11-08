@@ -3,9 +3,24 @@
     background-color: rgba($background-color, 0.8);
     backdrop-filter: blur(5px);
     text-align: center;
-    border-top: 1px solid $border-color;
     margin-top: 4rem;
+    position: relative; // Necessário para o pseudo-elemento
+    border-top: 1px solid $border-color; // Linha base
 
+    // Efeito de feixe de luz
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px; // Largura do feixe de luz (aumentada)
+        height: 1px; // Espessura da linha
+        background: linear-gradient(90deg, transparent, $primary-color, transparent);
+        animation: line-scan 5s linear infinite;
+    }
+}
+
+.footer {
     .footer-title {
         color: $accent-color;
         margin-bottom: 1.5rem;

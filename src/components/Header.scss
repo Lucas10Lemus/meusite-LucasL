@@ -1,49 +1,70 @@
 .header {
-    background-color: rgba($background-color, 0.6);
-    backdrop-filter: blur(10px);
-    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba($background-color, 0.6);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid $border-color;
     position: sticky;
     top: 0;
-    z-index: 100;
     width: 100%;
-    box-sizing: border-box;
+    z-index: 1000;
 
     .logo {
+        position: relative; // Necessário para o feixe de luz
+        padding-bottom: 8px; // Espaço para a linha não sobrepor o texto
+
         h1 {
+            margin: 0;
             font-size: 1.5rem;
             color: $text-color;
-            margin: 0; // Ajustado para a nova paleta
-            text-shadow: $glow-primary; // Brilho ciano suave
         }
 
         span {
-            font-size: 0.8rem;
-            color: $text-color;
+            font-family: $font-body;
+            font-size: 0.9rem;
+            color: $primary-color;
+        }
+
+        // Efeito de feixe de luz
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 150px; // Largura do feixe de luz
+            height: 1px;
+            background: linear-gradient(90deg, transparent, $primary-color, transparent);
+            animation: line-scan 5s linear infinite;
         }
     }
 
-    .navigation ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 1.5rem;
+    .navigation {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+        }
 
         a {
-            color: $text-color;
-            font-weight: bold;
             text-decoration: none;
+            color: $text-color;
+            font-family: $font-body;
+            font-size: 1rem;
+            padding: 5px 0;
             position: relative;
-            padding-bottom: 5px;
-            transition: color $transition-speed ease;
+            transition: color $transition-speed;
 
             &:hover {
-                color: $primary-color; // Ciano para o hover
-                text-shadow: $glow-primary; // Brilho ciano suave
+                color: $primary-color;
+                text-shadow: 0 0 5px rgba($primary-color, 0.7);
+
+                &::after {
+                    width: 100%;
+                }
             }
 
             &::after {
@@ -51,17 +72,10 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                width: 100%;
-                height: 2px;
+                width: 0;
+                height: 1px;
                 background-color: $primary-color;
-                transform: scaleX(0);
-                transform-origin: right;
-                transition: transform $transition-speed ease-out;
-            }
-
-            &:hover::after {
-                transform: scaleX(1);
-                transform-origin: left;
+                transition: width $transition-speed ease-out;
             }
         }
     }

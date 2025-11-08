@@ -19,7 +19,7 @@ const education = [
 
 const EducationPanel = () => (
     <section id="education" className="education-panel">
-        <h2>Formação Acadêmica</h2>
+        <h2 className="animated-text-glow">Formação Acadêmica</h2>
         {education.map((item, index) => (
             <div key={index} className="education-item">
                 <div className="education-icon">{item.icon}</div>

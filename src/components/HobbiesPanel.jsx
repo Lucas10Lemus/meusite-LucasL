@@ -5,7 +5,7 @@ import { FaVolleyballBall, FaDumbbell, FaCode, FaGamepad } from 'react-icons/fa'
 const HobbiesPanel = () => {
     return (
         <section id="o-que-eu-faco" className="hobbies-panel">
-            <h2>O que eu faço</h2>
+            <h2 className="animated-text-glow">O que eu faço</h2>
             <div className="activities-container">
                 <div className="activity-category">
                     <h3>Esportes & Lazer</h3>
