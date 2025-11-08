@@ -1,30 +1,38 @@
 .footer {
+    padding: 2rem;
     background-color: rgba($background-color, 0.8);
-    color: $text-color;
-    padding: 2rem 0;
+    backdrop-filter: blur(5px);
     text-align: center;
     border-top: 1px solid $border-color;
-    box-shadow: $shadow-blue-blur;
-    font-family: $font-body;
+    margin-top: 4rem;
 
-    .footer-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .footer-title {
+        color: $accent-color;
+        margin-bottom: 1.5rem;
+        font-family: $font-titles;
     }
 
-    .social-links a {
-        color: $accent-color;
-        margin: 0 1rem;
-        text-decoration: none;
-        transition: color $transition-speed ease;
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
 
-        &:hover {
-            color: $primary-color; // Cor primária para o hover
-            text-shadow: $glow-primary; // Brilho ciano suave
+        a {
+            color: $text-color;
+            font-size: 2rem;
+            transition: color $transition-speed, transform $transition-speed;
+
+            &:hover {
+                color: $primary-color;
+                transform: scale(1.2);
+            }
         }
+    }
+
+    .footer-text {
+        margin: 0;
+        color: darken($text-color, 30%);
+        font-size: 0.9rem;
     }
 }

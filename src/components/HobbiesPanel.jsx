@@ -1,6 +1,6 @@
 import React from 'react';
 import './HobbiesPanel.scss';
-import { FaVolleyballBall, FaBicycle, FaCode, FaGamepad } from 'react-icons/fa';
+import { FaVolleyballBall, FaDumbbell, FaCode, FaGamepad } from 'react-icons/fa';
 
 const HobbiesPanel = () => {
     return (
@@ -18,10 +18,10 @@ const HobbiesPanel = () => {
                             </div>
                         </li>
                         <li className="hobby-item">
-                            <FaBicycle className="hobby-icon" />
+                            <FaDumbbell className="hobby-icon" />
                             <div>
-                                <h4>Ciclismo</h4>
-                                <p>Gosto de explorar novos lugares de bicicleta.</p>
+                                <h4>Musculação</h4>
+                                <p>Gosto de ir a academia treinar e fortalecer os musculos.</p>
                             </div>
                         </li>
                     </ul>
