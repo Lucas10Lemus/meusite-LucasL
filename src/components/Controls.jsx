@@ -8,8 +8,7 @@ const Controls = ({ toggleTheme }) => {
     };
 
     const handleSettings = () => {
-        toggleTheme(); // Chama a função que veio do App.jsx
-        alert('Tema Neon alterado!');
+        toggleTheme();
     };
 
     return (

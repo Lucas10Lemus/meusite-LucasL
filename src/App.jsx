@@ -7,7 +7,7 @@ import HobbiesPanel from './components/HobbiesPanel';
 import ProjectsPanel from './components/ProjectsPanel';
 import Controls from './components/Controls';
 import Footer from './components/Footer';
-import useNeonTheme from '@/hooks/useNeonTheme'; 
+import useNeonTheme from '@/hooks/useNeonTheme';
 
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
             <SkillsPanel />
             <HobbiesPanel />
             <ProjectsPanel />
-            <Controls toggleTheme={toggleTheme} />   {/* prop passada */}
+            <Controls />
             <Footer />
         </div>
     );

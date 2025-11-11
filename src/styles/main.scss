@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -37,4 +43,9 @@ h3 {
     font-family: $font-titles;
     font-weight: 700;
     text-shadow: $glow-primary;
+}
+
+.app-container {
+    width: 100%;
+    overflow-x: clip;
 }
