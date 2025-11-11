@@ -5,6 +5,7 @@ import HologramPanel from './components/HologramPanel';
 import SkillsPanel from './components/SkillsPanel';
 import HobbiesPanel from './components/HobbiesPanel';
 import ProjectsPanel from './components/ProjectsPanel';
+import controls from './components/Controls';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
             <SkillsPanel />
             <HobbiesPanel />
             <ProjectsPanel />
+            {controls()}   
             <Footer />
         </div>
     );
