@@ -1,3 +1,4 @@
+@use 'sass:color';
 .hobbies-panel {
     background-color: $panel-background;
     backdrop-filter: blur(10px);
@@ -58,7 +59,7 @@
 
         p {
             margin: 0;
-            color: darken($text-color, 20%);
+            color: color.adjust($text-color, $lightness: -20%);
         }
     }
 
