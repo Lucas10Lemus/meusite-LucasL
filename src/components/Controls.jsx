@@ -1,15 +1,15 @@
 import React from 'react';
 import './Controls.scss';
 
-const Controls = () => {
+const Controls = ({ toggleTheme }) => {
     const handleEditProfile = () => {
         // Logic to edit profile
         alert('Edit Profile clicked!');
     };
 
     const handleSettings = () => {
-        // Logic to access settings
-        alert('Settings clicked!');
+        toggleTheme(); // Chama a função que veio do App.jsx
+        alert('Tema Neon alterado!');
     };
 
     return (
