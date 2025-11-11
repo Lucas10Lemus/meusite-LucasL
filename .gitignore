@@ -1,0 +1,8 @@
+#Dependecias
+node_modules/
+
+#Arquivos de build 
+dist/
+
+#Arquivos de cache do Vite
+.ViteCache/
