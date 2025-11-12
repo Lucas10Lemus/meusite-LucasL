@@ -1,4 +1,4 @@
-# tron-portfolio
+# meu site
 
 ## Descrição
 Este é o meu portfólio pessoal, criado para demonstrar meus projetos, habilidades e informações de contato de uma forma simples e responsiva.
@@ -16,8 +16,8 @@ Este é o meu portfólio pessoal, criado para demonstrar meus projetos, habilida
 
 1. **Clonar o repositório**
 ```powershell
-git clone https://github.com/seu-usuario/tron-portfolio.git
-cd tron-portfolio
+git clone https://github.com/Lucas10Lemus/meusite-LucasL.git
+cd meusite-LucasL
 ```
 
 2. **Instalar dependências**
