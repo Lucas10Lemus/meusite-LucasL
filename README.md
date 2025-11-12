@@ -4,7 +4,7 @@
 Este é o meu portfólio pessoal, criado para demonstrar meus projetos, habilidades e informações de contato de uma forma simples e responsiva.
 
 ## Tecnologias Utilizadas
-*(Sugestão: Adicione aqui as tecnologias que você realmente usou. Ex: React, Next.js, Vue, Svelte, etc.)*
+
 - **Frontend:** HTML, CSS, JavaScript
 - **Build Tool:** Node.js, npm
 
