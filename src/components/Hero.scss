@@ -1,46 +1,42 @@
 .hero-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 4rem 2rem;
-    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
-.profile-card {
-    background: $panel-background;
-    border: 1px solid $border-color;
-    border-radius: 15px;
-    padding: 3rem;
-    max-width: 700px;
-    width: 100%;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    box-shadow: $glow-primary, $shadow-blue-blur;
-    transform: perspective(1000px) rotateX(0) rotateY(0);
-    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
-    animation: fadeIn 1s ease-out forwards;
+.hero-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  padding: 0.8rem 1.5rem;
+  background: rgba(0, 255, 255, 0.05); /* Fundo sutil */
+  border-radius: 50px;
+  border: 1px solid rgba(0, 255, 255, 0.1);
 
-    @keyframes pulse-border {
-
-        0%,
-        100% {
-            box-shadow: $glow-primary, $shadow-blue-blur;
-        }
-
-        50% {
-            box-shadow: $glow-primary, 0 0 30px rgba($primary-color, 1);
-        }
-    }
+  a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s, text-shadow 0.3s;
 
     &:hover {
-        transform: perspective(1000px) scale(1.02);
-        box-shadow: $glow-primary, $glow-accent;
+      color: #00ffff; /* Seu azul neon */
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
     }
+  }
 }
 
 .profile-picture-container {
-    margin: -6rem auto 2rem auto;
+    margin: 0 auto 2rem auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -49,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $background-color;
+    
 
     .profile-picture-placeholder {
         width: calc(100% - 10px);
