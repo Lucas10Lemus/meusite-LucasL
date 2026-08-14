@@ -5,16 +5,8 @@ import './Hero.scss';
 const Hero = () => {
     return (
         <section id="hero" className="hero-container">
-                <nav className="hero-nav">
-                        <a href="#sobre">Sobre</a>
-                        <a href="#solucoes">Fale comigo</a>
-                        <a href="#habilidades">Habilidades</a>
-                        <a href="#formacoes">Formção</a>
-                        <a href="#hobbies">Hobbies</a>
-                        <a href="#contato">Contato</a>
-                </nav>
-              
-              
+
+            
               <div className="profile-picture-container">
                     <img src={profilePicture} alt="Foto de Lucas L" className="profile-picture" />
                 </div>
@@ -23,6 +15,14 @@ const Hero = () => {
                 <p className="hero-description">
                     Sou Lucas Lemuel, entusiata por tecnologia, design e interfaces digitais modernas. Busco unir performance e estética para criar experiências marcantes.
                 </p>
+
+                <nav className="hero-nav">
+                        <a href="#sobre">Sobre</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#formacoes">Formção</a>
+                        <a href="#hobbies">Hobbies</a>
+                        <a href="#contato">Contato</a>
+                </nav>
 
                 <div className="hero-buttons">
                     <a href="#solucoes" className="hero-button-link">
