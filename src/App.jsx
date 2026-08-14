@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import HologramPanel from './components/HologramPanel';
 import SkillsPanel from './components/SkillsPanel';
+import EducationPanel from './components/EducationPanel';
 import HobbiesPanel from './components/HobbiesPanel';
 import ProjectsPanel from './components/ProjectsPanel';
 import Controls from './components/Controls';
 import Footer from './components/Footer';
 import useNeonTheme from '@/hooks/useNeonTheme';
+
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
         <div className="app-container">
             <Header />
             <Hero />
-            <HologramPanel />
+            <EducationPanel />
             <SkillsPanel />
             <HobbiesPanel />
             <ProjectsPanel />

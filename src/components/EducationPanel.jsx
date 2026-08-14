@@ -6,8 +6,8 @@ const education = [
     {
         icon: <FaUniversity />,
         title: 'Análise e Desenvolvimento de Sistemas',
-        institution: 'Universidade XYZ',
-        period: '2022 - 2024',
+        institution: 'Faculdade de Ciências e Tecnologia do Maranhão',
+        period: '2023 - 2025',
     },
     {
         icon: <FaCertificate />,

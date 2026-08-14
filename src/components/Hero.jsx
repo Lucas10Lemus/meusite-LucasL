@@ -9,7 +9,7 @@ const Hero = () => {
                 <div className="profile-picture-container">
                     <img src={profilePicture} alt="Foto de Lucas L" className="profile-picture" />
                 </div>
-                <h1 className="hero-title animated-text-glow">Lucas Lemu</h1>
+                <h1 className="hero-title animated-text-glow">Lucas Lemuel</h1>
                 <p className="hero-subtitle">Desenvolvedor & Criador de Experiências Futuristas</p>
                 <p className="hero-description">
                     Sou Lucas Lemuel, entusiata por tecnologia, design e interfaces digitais modernas. Busco unir performance e estética para criar experiências marcantes.
@@ -19,7 +19,7 @@ const Hero = () => {
                         <button className="hero-button">Ver Projetos</button>
                     </a>
                     <a href="#contact" className="hero-button-link">
-                        <button className="hero-button secondary">Entrar em Contato</button>
+                        <button className="hero-button secondary">Fale comigo</button>
                     </a>
                 </div>
             </div>
