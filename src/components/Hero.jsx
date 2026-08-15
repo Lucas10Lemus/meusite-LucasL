@@ -18,17 +18,17 @@ const Hero = () => {
 
                 <nav className="hero-nav">
                         <a href="#sobre">Sobre</a>
-                        <a href="#habilidades">Habilidades</a>
-                        <a href="#formacoes">Formção</a>
+                        <a href="#skills">Habilidades</a>
+                        <a href="#education">Formção</a>
                         <a href="#hobbies">Hobbies</a>
-                        <a href="#contato">Contato</a>
+                        <a href="#contact">Contato</a>
                 </nav>
 
                 <div className="hero-buttons">
                     <a href="#solucoes" className="hero-button-link">
                         <button className="hero-button">Ver Projetos</button>
                     </a>
-                    <a href="#contato" className="hero-button-link">
+                    <a href="#contact" className="hero-button-link">
                         <button className="hero-button secondary">Fale comigo</button>
                     </a>
                 </div>
